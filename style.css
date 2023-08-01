@@ -1,0 +1,44 @@
+/* design mobile: 375px ; desktop: 1440px */
+:root {
+  --clr-primary-200: hsl(223, 100%, 88%);
+  --clr-primary-400: hsl(223, 87%, 63%);
+  --clr-primary-900: hsl(209, 33%, 12%);
+  --clr-secondary: hsl(354, 100%, 66%);
+  --clr-neutral: hsl(0, 0%, 59%);
+  --ff: "Libre Franklin", sans-serif;
+  --fw-regular: 300;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  left: -99999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
