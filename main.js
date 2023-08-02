@@ -1,7 +1,6 @@
 const form = document.getElementById("form");
 const email = document.getElementById("email");
-
-console.log(email);
+const errorDisplay = document.getElementById("error-message");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -10,18 +9,12 @@ form.addEventListener("submit", (e) => {
 });
 
 const setError = (message) => {
-  const errorDisplay = document.getElementById("error-message");
-
   errorDisplay.innerText = message;
   email.classList.add("error");
-  email.classList.remove("success");
 };
 
 const setSuccess = () => {
-  const errorDisplay = document.getElementById("error-message");
-
   errorDisplay.innerText = "";
-  email.classList.add("success");
   email.classList.remove("error");
 };
 
