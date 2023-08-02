@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -33,19 +33,22 @@
         <h1 class="title">
           We are launching <span class="title__accent">soon!</span>
         </h1>
-        <form id="form" class="form" action="" method="">
+        <!-- ! add action and method -->
+        <form id="form" class="form" action="" method="post" novalidate>
           <p class="form__title">Subscribe and get notified</p>
           <label for="email" id="emailLabel">
             <span class="sr-only">Enter your best email adress:</span>
           </label>
-          <input
-            type="email"
-            id="email"
-            class="form__input"
-            placeholder="Your email address..."
-            aria-labelledby="emailLabel"
-          />
-          <div id="error-message"></div>
+          <div class="form__field">
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              placeholder="Your email address..."
+              aria-labelledby="emailLabel"
+            />
+            <div id="error-message" class="form__message"></div>
+          </div>
           <button class="form__button" type="submit">
             <span>Notify Me</span>
           </button>
