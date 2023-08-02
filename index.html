@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
     <script
       src="https://kit.fontawesome.com/6dd0b94dc3.js"
       crossorigin="anonymous"
@@ -32,7 +33,7 @@
         <h1 class="title">
           We are launching <span class="title__accent">soon!</span>
         </h1>
-        <form class="form" action="" method="">
+        <form id="form" class="form" action="" method="">
           <p class="form__title">Subscribe and get notified</p>
           <label for="email" id="emailLabel">
             <span class="sr-only">Enter your best email adress:</span>
@@ -43,8 +44,8 @@
             class="form__input"
             placeholder="Your email address..."
             aria-labelledby="emailLabel"
-            required
           />
+          <div id="error-message"></div>
           <button class="form__button" type="submit">
             <span>Notify Me</span>
           </button>
