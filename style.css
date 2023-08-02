@@ -1,6 +1,7 @@
 :root {
   --clr-primary-200: hsl(223, 100%, 88%);
   --clr-primary-400: hsl(223, 87%, 63%);
+  --clr-primary-600: hsl(223, 62%, 48%);
   --clr-primary-900: hsl(209, 33%, 12%);
   --clr-secondary: hsl(354, 100%, 66%);
   --clr-neutral-100: hsl(0, 0%, 100%);
@@ -92,6 +93,10 @@ img {
   color: var(--clr-primary-900);
 }
 
+.form__input:focus {
+  border: 2px solid var(--clr-neutral-400);
+}
+
 .form__input::placeholder {
   color: var(--clr-primary-200);
   font-size: 0.75rem;
@@ -123,6 +128,12 @@ img {
   box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
 }
 
+.form__button:hover,
+.form__button:focus {
+  box-shadow: none;
+  background-color: var(--clr-primary-600);
+}
+
 .mockup {
   width: 100%;
   max-width: 40rem;
@@ -147,6 +158,11 @@ img {
   justify-content: center;
 }
 
+.social__icon:hover,
+.social__icon:focus {
+  border: 2px solid var(--clr-primary-400);
+}
+
 .social__logo {
   font-size: 1rem;
   color: var(--clr-primary-400);
@@ -158,11 +174,22 @@ img {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
+  color: var(--clr-primary-400);
+  letter-spacing: 0.05em;
+  padding-top: 2em;
   text-align: center;
+  margin-bottom: 2em;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.attribution__frontend-mentor {
+  margin-bottom: 0.5em;
+}
+
+.attribution__link {
+  color: var(--clr-primary-900);
+  text-decoration: underline dotted var(--clr-primary-400);
+  text-underline-offset: 0.25em;
 }
 
 @media (min-width: 600px) {
