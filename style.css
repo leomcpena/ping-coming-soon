@@ -84,6 +84,8 @@ img {
   padding: 0.625rem 2rem;
   border-radius: 100vw;
   margin-bottom: 0.625rem;
+  font-size: 0.75rem;
+  color: var(--clr-primary-900);
 }
 
 .form__input::placeholder {
@@ -179,6 +181,7 @@ img {
     flex: 1;
     padding: 1.125rem 1.875rem;
     width: 70%;
+    font-size: 1rem;
   }
 
   .form__button {
