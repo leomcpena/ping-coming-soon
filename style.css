@@ -38,6 +38,10 @@ img {
   overflow: hidden;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .wrapper {
   padding: 5rem 0;
   margin: 0 auto;
@@ -132,6 +136,28 @@ img {
 .form__button:focus {
   box-shadow: none;
   background-color: var(--clr-primary-600);
+}
+
+.subscribed {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.subscribed h2 {
+  font-weight: var(--fw-message);
+  color: var(--clr-neutral-400);
+  margin-bottom: 4.5rem;
+  font-size: 1.375rem;
+  text-wrap: balance;
+}
+
+.clr-primary-900 {
+  color: var(--clr-primary-900);
+  font-weight: var(--fw-bold);
+}
+
+.clr-primary-400 {
+  color: var(--clr-primary-400);
 }
 
 .mockup {
@@ -249,6 +275,11 @@ img {
     font-size: 1rem;
     padding: 1.125rem;
     width: 30%;
+  }
+
+  .subscribed h2 {
+    margin-bottom: 5.875rem;
+    font-size: 2rem;
   }
 
   .mockup {
