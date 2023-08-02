@@ -1,4 +1,3 @@
-/* design mobile: 375px ; desktop: 1440px */
 :root {
   --clr-primary-200: hsl(223, 100%, 88%);
   --clr-primary-400: hsl(223, 87%, 63%);
@@ -76,6 +75,7 @@ img {
 .form__input,
 .form__button {
   width: 100%;
+  height: 2.5rem;
 }
 
 .form__input {
@@ -92,6 +92,7 @@ img {
 }
 
 .form__button {
+  cursor: pointer;
   color: var(--clr-neutral-100);
   font-size: 0.75rem;
   font-weight: var(--fw-semibold);
@@ -104,6 +105,8 @@ img {
 }
 
 .mockup {
+  width: 100%;
+  max-width: 40rem;
   margin-bottom: 7.5rem;
 }
 
@@ -141,4 +144,58 @@ img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  .logo {
+    margin-bottom: 2.5rem;
+  }
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 40rem;
+    width: 100%;
+    margin-bottom: 5.875rem;
+  }
+
+  .form__title {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form__input,
+  .form__button {
+    height: 3.5rem;
+  }
+
+  .form__input {
+    flex: 1;
+    padding: 1.125rem 1.875rem;
+    width: 70%;
+  }
+
+  .form__button {
+    font-size: 1rem;
+    padding: 1.125rem;
+    width: 30%;
+  }
+
+  .form__input::placeholder {
+    font-size: 1rem;
+  }
+
+  .mockup {
+    margin-bottom: 4.5rem;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
 }
