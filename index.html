@@ -26,29 +26,51 @@
   </head>
 
   <body>
-    <img src="/images/logo.svg" alt="Ping." />
-    <h1>We are launching soon!</h1>
-    <p>Subscribe and get notified</p>
-    <form action="" method="">
-      <label for="email" id="emailLabel">
-        <span class="sr-only">Enter your best email adress:</span>
-      </label>
-      <input
-        type="email"
-        id="email"
-        placeholder="Your email address..."
-        aria-labelledby="emailLabel"
-        required
-      />
-      <button type="submit">Notify Me</button>
-    </form>
+    <div class="wrapper">
+      <main>
+        <img class="logo" src="/images/logo.svg" alt="Ping." />
+        <h1 class="title">
+          We are launching <span class="title__accent">soon!</span>
+        </h1>
+        <form class="form" action="" method="">
+          <p class="form__title">Subscribe and get notified</p>
+          <label for="email" id="emailLabel">
+            <span class="sr-only">Enter your best email adress:</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="form__input"
+            placeholder="Your email address..."
+            aria-labelledby="emailLabel"
+            required
+          />
+          <button class="form__button" type="submit">Notify Me</button>
+        </form>
+        <img
+          class="mockup"
+          src="/images/illustration-dashboard.png"
+          alt="Dashboard preview"
+        />
+      </main>
 
-    <div>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
+      <section>
+        <div class="social">
+          <a href="#" class="social__icon">
+            <i class="social__logo fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social__icon">
+            <i class="social__logo fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="social__icon">
+            <i class="social__logo fa-brands fa-instagram"></i>
+          </a>
+        </div>
 
-      <small> &copy; Copyright Ping. All rights reserved. </small>
+        <small class="copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </small>
+      </section>
     </div>
 
     <footer>
@@ -56,7 +78,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Leo Pena</a>.
       </p>
     </footer>
   </body>
