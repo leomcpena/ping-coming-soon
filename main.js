@@ -32,7 +32,7 @@ const validateEmail = () => {
   const emailValue = email.value.trim();
 
   if (emailValue === "") {
-    setError("Email is required");
+    setError("Whoops! It looks like you forgot to add your email");
   } else if (!isValidEmail(emailValue)) {
     setError("Please provide a valid email address");
   } else {
